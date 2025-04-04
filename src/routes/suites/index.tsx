@@ -1,9 +1,8 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { getRandomNumber } from "../../utils/number";
+import {} from "../../utils/number";
 
 export default component$(() => {
-  const randomNum = useSignal(getRandomNumber(1, 50));
   return (
     <>
       <div class="title"> Suite de nombres </div>
