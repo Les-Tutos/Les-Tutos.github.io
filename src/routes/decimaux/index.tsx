@@ -10,6 +10,7 @@ export default component$(() => {
     const target = event.target as HTMLInputElement;
     state.inputValue = target.value;
   });
+
   const nombreDecimal = $(() => {
     if (state.inputValue.trim() === "") {
       return "Aucun texte n'a encore été entré";
@@ -19,6 +20,7 @@ export default component$(() => {
       return "Ceci n'est pas un nombre décimal.";
     }
   });
+
   return (
     <>
       <div class="title"> Les nombres décimaux </div>
@@ -40,10 +42,10 @@ export default component$(() => {
           En effet :
         </p>
         <ul>
-          <li> 1,1 possède un uniqume chiffre après la virgule</li>
+          <li> 1,1 possède un unique chiffre après la virgule</li>
           <li> 40,98 possède 2 chiffres après la virgule</li>
           <li> 0,03 possède aussi 2 chiffres après la virgule</li>
-          <li> 1 possède 0 chiffres après la virgule</li>
+          <li> 1 possède 0 chiffre après la virgule</li>
         </ul>
         <p>
           En revanche, 2/3 qui s'écrirait 0,6666... avec une infinité de 6 n'est
@@ -52,11 +54,11 @@ export default component$(() => {
           De même pour π qui s'écrit 3,14159265358979323846... avec une infinité
           de chiffres
         </p>
-      </div>{" "}
+      </div>
       <div class="activity">
         <h2> Est-ce un nombre décimal ?</h2>
         <p>
-          Dans cette activité, vous pouvez entrer un nombre pour s'avoir s'il
+          Dans cette activité, vous pouvez entrer un nombre pour savoir s'il
           s'agit d'un nombre en écriture décimale !<br />
           <br />
           <input
