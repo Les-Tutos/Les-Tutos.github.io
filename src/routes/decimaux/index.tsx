@@ -1,7 +1,7 @@
 import { component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { $ } from "@builder.io/qwik";
-import { isDecimal } from "../../utils/number";
+import { isDecimal } from "~/components/utils/number";
 
 export default component$(() => {
   const state = useStore({ inputValue: "" });

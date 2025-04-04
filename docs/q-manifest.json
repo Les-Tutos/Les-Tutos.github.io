@@ -1,5 +1,5 @@
 {
-  "manifestHash": "syw3fi",
+  "manifestHash": "5byy2b",
   "symbols": {
     "s_02wMImzEAbk": {
       "origin": "../node_modules/@builder.io/qwik-city/index.qwik.mjs",
@@ -63,8 +63,8 @@
       "ctxName": "component$",
       "captures": false,
       "loc": [
-        230,
-        2413
+        237,
+        2420
       ]
     },
     "s_Nk9PlpjQm9Y": {
@@ -154,8 +154,8 @@
       "ctxName": "component$",
       "captures": false,
       "loc": [
-        171,
-        298
+        134,
+        261
       ]
     },
     "s_RPDJAz33WLA": {
@@ -235,8 +235,8 @@
       "captures": true,
       "parent": "s_DHrWdDTIyyQ",
       "loc": [
-        315,
-        428
+        322,
+        435
       ]
     },
     "s_Wz2iwpKByos": {
@@ -249,8 +249,8 @@
       "captures": true,
       "parent": "s_DHrWdDTIyyQ",
       "loc": [
-        458,
-        733
+        465,
+        740
       ]
     },
     "s_eBQ0vFsFKsk": {
@@ -415,8 +415,8 @@
         "q-DM2Byn__.js"
       ],
       "origins": [
-        "src/routes/decimaux/index.tsx_decimaux_component_nombreDecimal_Wz2iwpKByos.js",
-        "src/utils/number.tsx"
+        "src/components/utils/number.tsx",
+        "src/routes/decimaux/index.tsx_decimaux_component_nombreDecimal_Wz2iwpKByos.js"
       ],
       "symbols": [
         "s_Wz2iwpKByos"
