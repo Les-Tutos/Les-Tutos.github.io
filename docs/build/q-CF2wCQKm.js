@@ -1,0 +1,1 @@
+import{a as s,b as l,F as n}from"./q-DM2Byn__.js";const t=()=>s(n,{children:[l("div",null,{class:"title"}," Suite de nombres ",3,null),l("div",null,null,"Bientôt disponible",3,null)]},3,"6u_0");export{t as s_uacDjTqsseI};
