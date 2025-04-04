@@ -1,5 +1,5 @@
 {
-  "manifestHash": "5byy2b",
+  "manifestHash": "67jmh1",
   "symbols": {
     "s_02wMImzEAbk": {
       "origin": "../node_modules/@builder.io/qwik-city/index.qwik.mjs",
@@ -142,7 +142,7 @@
       "captures": false,
       "loc": [
         310,
-        943
+        954
       ]
     },
     "s_uacDjTqsseI": {
@@ -321,7 +321,7 @@
     "s_VKFlAWJuVm8": "q-Ddnu28-1.js",
     "s_WmYC5H00wtI": "q-C4Hw1CrM.js",
     "s_e0ssiDXoeAM": "q-RYbj4Me4.js",
-    "s_tntnak2DhJ8": "q-Bv-GvgzH.js",
+    "s_tntnak2DhJ8": "q-DnirVEHn.js",
     "s_uacDjTqsseI": "q-CF2wCQKm.js",
     "s_RPDJAz33WLA": "q-DFvs3Fx1.js",
     "s_A5bZC7WO00A": "q-DF_K70BE.js",
@@ -433,25 +433,6 @@
       ],
       "symbols": [
         "s_i1Cv0pYJNR0"
-      ]
-    },
-    "q-Bv-GvgzH.js": {
-      "size": 522,
-      "hasSymbols": true,
-      "imports": [
-        "q-2LWRYvkK.js",
-        "q-DM2Byn__.js",
-        "q-JlpDuAlw.js"
-      ],
-      "dynamicImports": [
-        "q-B8UR9v8-.js"
-      ],
-      "origins": [
-        "src/components/router-head/router-head.tsx",
-        "src/root.tsx_root_component_tntnak2DhJ8.js"
-      ],
-      "symbols": [
-        "s_tntnak2DhJ8"
       ]
     },
     "q-C4Hw1CrM.js": {
@@ -587,21 +568,6 @@
         "s_RPDJAz33WLA"
       ]
     },
-    "q-DG1WcBWI.js": {
-      "size": 171,
-      "hasSymbols": false,
-      "imports": [
-        "q-2LWRYvkK.js",
-        "q-DM2Byn__.js"
-      ],
-      "dynamicImports": [
-        "q-Bv-GvgzH.js"
-      ],
-      "origins": [
-        "src/global.css",
-        "src/root.tsx"
-      ]
-    },
     "q-Di9J69WY.js": {
       "size": 1117,
       "hasSymbols": true,
@@ -651,6 +617,40 @@
       ],
       "symbols": [
         "s_D0aew7oEj3Y"
+      ]
+    },
+    "q-DnirVEHn.js": {
+      "size": 533,
+      "hasSymbols": true,
+      "imports": [
+        "q-2LWRYvkK.js",
+        "q-DM2Byn__.js",
+        "q-JlpDuAlw.js"
+      ],
+      "dynamicImports": [
+        "q-B8UR9v8-.js"
+      ],
+      "origins": [
+        "src/components/router-head/router-head.tsx",
+        "src/root.tsx_root_component_tntnak2DhJ8.js"
+      ],
+      "symbols": [
+        "s_tntnak2DhJ8"
+      ]
+    },
+    "q-DrtiLoEd.js": {
+      "size": 171,
+      "hasSymbols": false,
+      "imports": [
+        "q-2LWRYvkK.js",
+        "q-DM2Byn__.js"
+      ],
+      "dynamicImports": [
+        "q-DnirVEHn.js"
+      ],
+      "origins": [
+        "src/global.css",
+        "src/root.tsx"
       ]
     },
     "q-DT9-pEf6.js": {
