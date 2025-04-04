@@ -4,18 +4,18 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <h1>Hi 👋</h1>
+      <h1>Tuto Maths</h1>
       <div>
-        Can't wait to see what you build with qwik!
+        <a href="decimaux"> Les nombres décimaux </a>
         <br />
-        Happy coding.
+        <a href="suites"> Les suites </a>
       </div>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Tuto Maths",
   meta: [
     {
       name: "description",
