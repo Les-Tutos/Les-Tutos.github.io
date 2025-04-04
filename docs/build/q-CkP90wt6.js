@@ -1,1 +1,0 @@
-import{_ as t}from"./q-2LWRYvkK.js";const _=()=>t(()=>import("./q-B7e_Suxw.js"),[]),s=[["/",[_,()=>t(()=>import("./q-Dtx_0JFx.js"),[])]],["decimaux/",[_,()=>t(()=>import("./q-DwvYLNTP.js"),[])]],["suites/",[_,()=>t(()=>import("./q-HtCFyWm2.js"),[])]]],e=[];const r=!0;export{r as c,e as m,s as r};
