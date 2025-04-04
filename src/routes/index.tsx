@@ -19,7 +19,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Page principale de Tuto Maths",
     },
   ],
 };
