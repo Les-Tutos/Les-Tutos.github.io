@@ -1,23 +1,54 @@
 import { component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { $ } from "@builder.io/qwik";
-import { isDecimal } from "~/components/utils/number";
+import { isDecimal, sumDecimal } from "~/components/utils/number";
 
 export default component$(() => {
-  const state = useStore({ inputValue: "" });
-
+  // Activité isDecimal
+  const actIsDecimal = useStore({ inputValue: "" });
   const handleInputChange = $((event: Event) => {
     const target = event.target as HTMLInputElement;
-    state.inputValue = target.value;
+    actIsDecimal.inputValue = target.value;
   });
-
   const nombreDecimal = $(() => {
-    if (state.inputValue.trim() === "") {
+    if (actIsDecimal.inputValue.trim() === "") {
       return "Aucun texte n'a encore été entré";
-    } else if (isDecimal(state.inputValue)) {
+    } else if (isDecimal(actIsDecimal.inputValue)) {
       return "Il s'agit bien d'un nombre décimal !";
     } else {
       return "Ceci n'est pas un nombre décimal.";
+    }
+  });
+  // Nouvelle activité pour la somme de deux nombres décimaux
+  const actSumDecimals = useStore({
+    inputValue1: "",
+    inputValue2: "",
+    result: "",
+  });
+
+  const handleInputChange1 = $((event: Event) => {
+    const target = event.target as HTMLInputElement;
+    actSumDecimals.inputValue1 = target.value;
+  });
+
+  const handleInputChange2 = $((event: Event) => {
+    const target = event.target as HTMLInputElement;
+    actSumDecimals.inputValue2 = target.value;
+  });
+
+  const handleSumClick = $(() => {
+    const value1 = actSumDecimals.inputValue1.trim();
+    const value2 = actSumDecimals.inputValue2.trim();
+
+    if (value1 === "" || value2 === "") {
+      actSumDecimals.result = "Veuillez entrer les deux nombres.";
+    } else if (isDecimal(value1) && isDecimal(value2)) {
+      const num1 = parseFloat(value1);
+      const num2 = parseFloat(value2);
+      actSumDecimals.result = `La somme est : ${sumDecimal(num1, num2)}`;
+    } else {
+      actSumDecimals.result =
+        "Les deux entrées doivent être des nombres décimaux.";
     }
   });
 
@@ -63,12 +94,52 @@ export default component$(() => {
           <br />
           <input
             type="text"
-            value={state.inputValue}
+            value={actIsDecimal.inputValue}
             onInput$={handleInputChange}
             placeholder="Entrez quelque chose..."
           />
         </p>
         <p>{nombreDecimal()} </p>
+      </div>
+      <div class="method">
+        <h2> Addition de nombres décimaux </h2>
+        <p>
+          Pour additionner des nombres décimaux, on procède de la même manière
+          que pour les nombres entiers. <br />
+          On aligne les virgules et on additionne les chiffres de droite à
+          gauche. Si un nombre possède plus de chiffres après la virgule, il
+          suffit d'ajouter des 0 à la suite du nombre qui en a le moins. <br />
+          <br />
+          Par exemple :
+        </p>
+
+        <div style="display: inline-block; font-family: monospace; text-align: right; line-height: 1.4;">
+          <div> 23,40</div>
+          <div>+ 12,73</div>
+          <div>-------</div>
+          <div> 36,13</div>
+        </div>
+      </div>
+      <div class="activity">
+        <h2> Additionnez deux nombres décimaux </h2>
+        <p>
+          Dans cette activité, vous pouvez entrer deux nombres décimaux et les
+          additionner !<br />
+          <input
+            type="text"
+            value={actSumDecimals.inputValue1}
+            onInput$={handleInputChange1}
+            placeholder="Entrez le premier nombre..."
+          />
+          <input
+            type="text"
+            value={actSumDecimals.inputValue2}
+            onInput$={handleInputChange2}
+            placeholder="Entrez le second nombre..."
+          />
+        </p>
+        <button onClick$={handleSumClick}>Calculer la somme</button>
+        <p>{actSumDecimals.result}</p>
       </div>
     </>
   );
