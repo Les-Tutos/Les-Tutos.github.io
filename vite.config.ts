@@ -17,9 +17,7 @@ const { dependencies = {}, devDependencies = {} } = pkg as any as {
 errorOnDuplicatesPkgDeps(devDependencies, dependencies);
 
  export default defineConfig(({ command, mode }) => {
-   const baseUrl = process.env.BASE_URL || '/';
    return {
-     base: baseUrl, // Utiliser la variable d'environnement pour la base URL
      plugins: [
        qwikCity(),
        qwikVite({
