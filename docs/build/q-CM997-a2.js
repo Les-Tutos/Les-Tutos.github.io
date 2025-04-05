@@ -1,1 +1,0 @@
-import{_ as t}from"./q-Cxm9Iznd.js";const o=()=>t(()=>import("./q-Dqoc8E8r.js"),[]),s=[["/tuto-maths/",[o,()=>t(()=>import("./q-BXWIXYxt.js"),[])]],["tuto-maths/decimaux/",[o,()=>t(()=>import("./q-Ctx4A0vX.js"),[])]],["tuto-maths/suites/",[o,()=>t(()=>import("./q-BWK1C0EQ.js"),[])]]],e=[];const r=!0;export{r as c,e as m,s as r};

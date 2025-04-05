@@ -1,1 +1,0 @@
-import{_ as t}from"./q-Cxm9Iznd.js";import{c as e,q as o}from"./q-DM2Byn__.js";const i=e(o(()=>t(()=>import("./q-e3ytD2ob.js"),[]),"s_B0lqk5IDDy4")),n={title:"Tuto Maths",meta:[{name:"description",content:"Page principale de Tuto Maths"}]};export{i as default,n as head};

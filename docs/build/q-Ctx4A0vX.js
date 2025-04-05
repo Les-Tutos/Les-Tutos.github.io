@@ -1,1 +1,0 @@
-import{_ as e}from"./q-Cxm9Iznd.js";import{c as t,q as o}from"./q-DM2Byn__.js";const i=t(o(()=>e(()=>import("./q-Cr6oivYo.js"),[]),"s_DHrWdDTIyyQ")),n={title:"Les nombres décimaux ",meta:[{name:"description",content:"Une page interactive sur les nombres décimaux"}]};export{i as default,n as head};
