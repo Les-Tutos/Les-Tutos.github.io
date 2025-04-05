@@ -1,7 +1,11 @@
 import { component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { $ } from "@builder.io/qwik";
-import { isDecimal, sumDecimal } from "~/components/utils/number";
+import {
+  isDecimal,
+  sumDecimal,
+  getRandomNumber,
+} from "~/components/utils/number";
 
 export default component$(() => {
   // Activité isDecimal
@@ -19,7 +23,8 @@ export default component$(() => {
       return "Ceci n'est pas un nombre décimal.";
     }
   });
-  // Nouvelle activité pour la somme de deux nombres décimaux
+
+  //Activité pour la somme de deux nombres décimaux
   const actSumDecimals = useStore({
     inputValue1: "",
     inputValue2: "",
@@ -50,6 +55,23 @@ export default component$(() => {
       actSumDecimals.result =
         "Les deux entrées doivent être des nombres décimaux.";
     }
+  });
+
+  // Exercice Somme de nombres décimaux
+  const actRandomNumbers = useStore({ num1: 0, num2: 0, sum: 0 });
+
+  const generateRandomNumbers = $(() => {
+    const randomNum1 = getRandomNumber(0, 10000);
+    const randomNum2 = getRandomNumber(0, 10000);
+    actRandomNumbers.num1 = randomNum1 / 100;
+    actRandomNumbers.num2 = randomNum2 / 100;
+  });
+
+  const calculateSum = $(() => {
+    actRandomNumbers.sum = sumDecimal(
+      actRandomNumbers.num1,
+      actRandomNumbers.num2,
+    );
   });
 
   return (
@@ -140,6 +162,15 @@ export default component$(() => {
         </p>
         <button onClick$={handleSumClick}>Calculer la somme</button>
         <p>{actSumDecimals.result}</p>
+      </div>
+      <div class="exercices">
+        <button onClick$={generateRandomNumbers}>
+          Générer deux nombres aléatoires
+        </button>
+        <p>Nombre 1 : {actRandomNumbers.num1}</p>
+        <p>Nombre 2 : {actRandomNumbers.num2}</p>
+        <button onClick$={calculateSum}>Sommer</button>
+        <p>Somme : {actRandomNumbers.sum}</p>
       </div>
     </>
   );
