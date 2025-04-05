@@ -29,7 +29,6 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
        }),
        tsconfigPaths(),
     ],
-    base: baseUrl, // Utiliser la variable d'environnement pour la base URL
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
       // Put problematic deps that break bundling here, mostly those with binaries.
