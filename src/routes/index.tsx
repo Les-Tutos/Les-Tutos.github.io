@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Footer from "~/components/footer/footer";
 
 export default component$(() => {
   return (
@@ -10,6 +11,7 @@ export default component$(() => {
         <br />
         <a href="suites"> Les suites </a>
       </div>
+      <Footer />
     </>
   );
 });
