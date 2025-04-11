@@ -3,13 +3,21 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import Footer from "~/components/footer/footer";
 
 export default component$(() => {
+  <style>
+    @import
+    url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+  </style>;
   return (
     <>
-      <h1>Tuto Maths</h1>
-      <div>
-        <a href="decimaux"> Les nombres décimaux </a>
+      <h1 style="font-size: 4em; text-align: center;">Tuto Maths</h1>
+      <div style="font-size: 2em;">
+        <a class="chapter" href="decimaux">
+          Les nombres décimaux
+        </a>
         <br />
-        <a href="suites"> Les suites </a>
+        <a class="chapter" href="suites">
+          Les suites
+        </a>
       </div>
       <Footer />
     </>

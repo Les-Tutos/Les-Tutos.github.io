@@ -1,5 +1,6 @@
 body {
   background-color: #e5dec5;
+  font-family: "Roboto Mono", monospace;
 }
 
 .courses,
@@ -29,4 +30,8 @@ body {
 .title {
   font-size: 4em;
   text-align: center;
+}
+
+.chapter {
+  text-decoration: none;
 }
