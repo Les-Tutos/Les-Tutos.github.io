@@ -10,6 +10,10 @@ function convertToNumber(input: string): number {
 }
 
 export function isDecimal(input: string): boolean {
+  // Vérifier si l'entrée est une fraction
+  if (input.includes("/")) {
+    return false;
+  }
   // Convertir l'entrée en nombre
   const number = convertToNumber(input);
   // Vérifier si le nombre est fini
