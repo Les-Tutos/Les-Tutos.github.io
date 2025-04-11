@@ -1,1 +1,0 @@
-import{a as u,b as l,F as n}from"./q-DM2Byn__.js";const e=()=>u(n,{children:[l("h1",null,null,"Tuto Maths",3,null),l("div",null,null,[l("a",null,{href:"decimaux"}," Les nombres décimaux ",3,null),l("br",null,null,null,3,null),l("a",null,{href:"suites"}," Les suites ",3,null)],3,null)]},3,"i8_0");export{e as s_B0lqk5IDDy4};

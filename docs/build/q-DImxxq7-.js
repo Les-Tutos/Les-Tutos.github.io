@@ -1,0 +1,1 @@
+import{g as n}from"./q-DM2Byn__.js";import{k as p}from"./q-DM2Byn__.js";import{g as m}from"./q-C2Lzxy1-.js";const e=()=>{const[o]=n(),r=m(0,1e4),a=m(0,1e4);o.num1=r/100,o.num2=a/100};export{p as _hW,e as s_kXxNEqa2VzM};

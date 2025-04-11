@@ -1,0 +1,1 @@
+import{F as n}from"./q-CK-qAO_5.js";import{a as l,b as s,F as t}from"./q-DM2Byn__.js";import"./q-2LWRYvkK.js";const o=()=>l(t,{children:[s("div",null,{class:"title"}," Suite de nombres ",3,null),s("div",null,null,"Bientôt disponible",3,null),l(n,null,3,"6u_0")]},1,"6u_1");export{o as s_uacDjTqsseI};
